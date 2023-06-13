@@ -1,0 +1,25 @@
+{
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions":
+    {
+      "target": "ES2022",
+      "module": "commonjs",
+      "outDir": "dist",
+      "sourceMap": true,
+      "allowJs": true,
+      "moduleResolution": "node",
+      "strict": true, 
+      "rootDirs": ["src/views", "generated/templates/views" ],
+      "esModuleInterop": true
+    },
+    "paths": {
+      "*": ["*", "generated/*"]
+    },
+  "include": ["./src", "routes/routes.ts", "routes/routes.ts"],
+  "exclude": ["node_modules"],
+}
